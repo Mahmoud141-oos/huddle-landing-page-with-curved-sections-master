@@ -95,4 +95,4 @@ This challenge is completely free. Please share it with anyone who will find it 
 
 ## 🔗 Live Website
 
-[🌍 Visit the Live Dashboard](https://alaqili-hunddle-landing-page.netlify.app/)
+[🌍 Visit the Live Dashboard](https://alaqili-huddle-landing-page.netlify.app/)
