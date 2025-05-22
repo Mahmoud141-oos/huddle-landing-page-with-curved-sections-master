@@ -1,0 +1,341 @@
+/* variables */
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%)
+}
+/* __________________________________________________________ */
+/* 
+                    Fonts
+
+    font-family: "Poppins", sans-serif;
+
+    font-family: "Open Sans", sans-serif;
+
+*/
+/* __________________________________________________________ */
+/* styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* nav */
+
+nav,
+.bottom-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 50px;
+}
+
+.right-nav button {
+    background: none;
+    color: var(--Pink);
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: 2px solid var(--Pink);
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* section one */
+
+.section-1 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.section-1,
+.top-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+}
+
+.top-1 h1 {
+    color: var(--Very-Dark-Cyan);
+    font-size: 55px;
+}
+
+.top-1 p {
+    color: var(--Very-Dark-Cyan);
+    font-size: 18px;
+    width: 40%;
+    margin: 20px 0 30px 0;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: var(--Pink);
+    color: #ffffff;
+    padding: 20px 100px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 130px;
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--Light-Pink);
+    transform: translate(20px, 0);
+}
+
+.top-1 img {
+    width: 79%;
+}
+
+.bottom-1 {
+    padding: 0;
+    width: 70%;
+    margin-top: 150px;
+}
+
+.left-bottom-1 img,
+.right-bottom-1 img {
+    display: flex;
+    align-items: flex-end; 
+    width: 15%;
+}
+
+.left-bottom-1 h1,
+.right-bottom-1 h1 {
+    color: var(--Very-Dark-Cyan);
+    font-size: 7rem;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+
+.left-bottom-1 h1 span,
+.right-bottom-1 h1 span {
+    font-weight: 500;
+}
+
+.left-bottom-1 p,
+.right-bottom-1 p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ddd;
+}
+
+/* section Two, section three and section four*/
+
+.section-2,
+.section-4 {
+    background-color: #f6fbff;
+    position: relative;
+}
+
+.container-2,
+.container-3,
+.container-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 300px auto 100px;
+    padding: 50px 0;
+    height: 700px;
+
+}
+
+.container-2::after,
+.container-4::after {
+    content: '';
+    position: absolute;
+    top: -140px;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background-image: url('/huddle-landing-page-with-curved-sections-master/images/bg-section-top-desktop-1.svg');
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.container-2::before,
+.container-4::before {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background-image: url('/huddle-landing-page-with-curved-sections-master/images/bg-section-bottom-desktop-1.svg');
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.container-4::after {
+    background-image: url('/huddle-landing-page-with-curved-sections-master/images/bg-section-top-desktop-2.svg');
+}
+
+.container-4::before {
+    background-image: url('/huddle-landing-page-with-curved-sections-master/images/bg-section-bottom-desktop-2.svg');
+}
+
+.left-2,
+.right-3,
+.left-4 {
+    width: 50%;
+}
+
+.left-2 h1,
+.right-3 h1,
+.left-4 h1 {
+    font-size: 60px;
+    color: var(--Very-Dark-Cyan);
+}
+
+.left-2 p,
+.right-3 p,
+.left-4 p {
+    margin-top: 30px;
+    font-size: 20px;
+    color: var(--Very-Dark-Cyan);
+}
+
+.left-4 p {
+    width: 70%;
+}
+
+.right-2,
+.left-3,
+.right-4 {
+    width: 45%;
+}
+
+.right-2 img,
+.left-3 img,
+.right-4 img {
+    width: 100%;
+}
+
+/* section five */
+
+.section-5 {
+    margin-top: 200px;
+}
+
+.container-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.container-5 h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+    color: var(--Very-Dark-Cyan);
+    text-align: center;
+}
+
+/* footer */ 
+footer {
+    background-color: var(--Very-Dark-Cyan);
+    color: #ffffff;
+    position: relative;
+    margin-top: 200px;
+    height: 400px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0;
+    z-index: -1;
+}
+
+.container-footer::after {
+    content: '';
+    position: absolute;
+    top: -195px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: url('/huddle-landing-page-with-curved-sections-master/images/bg-footer-top-desktop.svg');
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.logo-footer {
+    filter: invert(10%) brightness(1000%);
+    width: 35%;
+    margin-bottom: 20px;
+}
+
+.left-container h4, .right-container h4 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #d7edf2;
+    width: 65%;
+}
+
+.icon-footer i {
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.left-container, .right-container {
+    width: 40%;
+}
+
+.right-container h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+form .email {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 20px;
+    outline: none;
+}
+
+.btn-footer {
+    background-color: var(--Pink);
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    padding: 7px 20px;
+    transition: all 0.4s ease;
+    font-size: 18px;
+}  
+
+.btn-footer:hover {
+    background-color: var(--Light-Pink);
+    transform: translate(10px, 0px);
+}
